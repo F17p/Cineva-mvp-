@@ -1,0 +1,16 @@
+[
+  {
+    "id": "nosferatu-1922",
+    "title": "Nosferatu (1922) — Domínio Público",
+    "description": "Clássico do expressionismo alemão. Exemplo para teste do player.",
+    "thumbnail": "https://placehold.co/800x450?text=Cineva",
+    "src": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    "id": "metropolis-1927",
+    "title": "Metropolis (1927) — Domínio Público",
+    "description": "Ficção científica icônica. Exemplo de item.",
+    "thumbnail": "https://placehold.co/800x450?text=Cineva",
+    "src": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  }
+]
