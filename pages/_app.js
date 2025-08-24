@@ -9,3 +9,15 @@ export default function MyApp({ Component, pageProps }) {
     </>
   )
 }
+
+import '@/styles/globals.css'
+import Footer from '../components/Footer'
+
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  )
+}
