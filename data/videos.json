@@ -2,32 +2,32 @@
   {
     "id": "breaking-bad-2008",
     "title": "Breaking Bad (2008)",
-    "description": "Um professor de química do ensino médio transforma-se em fabricante de metanfetamina.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmYxZTc1ZjUt.jpg",
+    "description": "Um professor de química transforma-se em fabricante de metanfetamina.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genre": "Séries"
   },
   {
     "id": "stranger-things-2016",
     "title": "Stranger Things (2016)",
-    "description": "Um grupo de crianças enfrenta criaturas de outro mundo na pequena cidade de Hawkins.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMmFmN.jpg",
+    "description": "Crianças enfrentam forças sobrenaturais em Hawkins.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
     "genre": "Séries"
   },
   {
     "id": "dark-knight-2008",
     "title": "Batman: O Cavaleiro das Trevas (2008)",
-    "description": "O Cavaleiro das Trevas enfrenta o Coringa em Gotham City.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0Nl5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+    "description": "Batman enfrenta o Coringa em Gotham City.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
     "genre": "Ação"
   },
   {
     "id": "avengers-endgame-2019",
     "title": "Vingadores: Ultimato (2019)",
-    "description": "Os heróis se unem para derrotar Thanos e restaurar o universo.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2NjYyNV5BMl5BanBnXkFtZTgwODk5ODMwNzM@._V1_.jpg",
+    "description": "Os heróis tentam reverter o estalar de dedos de Thanos.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
     "genre": "Ação"
   },
@@ -35,7 +35,7 @@
     "id": "titanic-1997",
     "title": "Titanic (1997)",
     "description": "O romance trágico entre Jack e Rose a bordo do Titanic.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMmEzZjQxMTgt.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTI.mp4",
     "genre": "Romance"
   },
@@ -43,7 +43,7 @@
     "id": "notebook-2004",
     "title": "Diário de uma Paixão (2004)",
     "description": "Uma história de amor que desafia o tempo.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmU5N.jpg",
+    "thumbnail": "https://placehold.co/800x1200?text=Di%C3%A1rio+de+uma+Paix%C3%A3o",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
     "genre": "Romance"
   },
@@ -51,31 +51,31 @@
     "id": "conjuring-2013",
     "title": "Invocação do Mal (2013)",
     "description": "Investigadores paranormais enfrentam uma entidade demoníaca.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BM2E5ZT.jpg",
+    "thumbnail": "https://placehold.co/800x1200?text=Invoca%C3%A7%C3%A3o+do+Mal",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
     "genre": "Terror"
   },
   {
     "id": "it-2017",
     "title": "It: A Coisa (2017)",
-    "description": "Um grupo de crianças enfrenta um palhaço maligno chamado Pennywise.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzYyZ.jpg",
+    "description": "Um grupo de amigos enfrenta o palhaço Pennywise.",
+    "thumbnail": "https://placehold.co/800x1200?text=It:+A+Coisa",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
     "genre": "Terror"
   },
   {
     "id": "matrix-1999",
     "title": "Matrix (1999)",
-    "description": "Neo descobre que o mundo é uma simulação controlada por máquinas.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3NjAt.jpg",
+    "description": "Neo descobre a verdade sobre a realidade simulada.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
     "genre": "Ficção Científica"
   },
   {
     "id": "inception-2010",
     "title": "A Origem (2010)",
-    "description": "Um ladrão invade sonhos para roubar segredos e implantar ideias.",
-    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNl5BMl5BanBnXkFtZTcwODI5OTM0Mw@@._V1_.jpg",
+    "description": "Um ladrão invade sonhos para implantar ideias.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
     "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
     "genre": "Ficção Científica"
   }
