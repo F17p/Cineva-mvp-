@@ -26,5 +26,47 @@
     "description": "Animação clássica da Disney que emocionou o mundo inteiro.",
     "thumbnail": "https://image.tmdb.org/t/p/w500/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg",
     "src": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+  },
+  {
+    "id": "avengers-2012",
+    "title": "Os Vingadores (2012)",
+    "description": "O encontro dos maiores heróis da Marvel em uma batalha épica.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    "src": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    "id": "harry-potter-2001",
+    "title": "Harry Potter e a Pedra Filosofal (2001)",
+    "description": "O início da jornada mágica de Harry Potter em Hogwarts.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+    "src": "https://moctd.github.io/hls-sample/hls/playlist.m3u8"
+  },
+  {
+    "id": "inception-2010",
+    "title": "A Origem (2010)",
+    "description": "Um ladrão invade sonhos para roubar segredos, mas recebe uma missão impossível.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
+    "src": "https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+  },
+  {
+    "id": "matrix-1999",
+    "title": "Matrix (1999)",
+    "description": "Neo descobre a verdade sobre a realidade e enfrenta as máquinas.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "src": "https://storage.googleapis.com/shaka-demo-assets/heliocentrism/hls.m3u8"
+  },
+  {
+    "id": "game-of-thrones-2011",
+    "title": "Game of Thrones (2011 - 2019)",
+    "description": "Famílias nobres disputam o Trono de Ferro em Westeros.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+    "src": "https://moctd.github.io/hls-sample/hls/index.m3u8"
+  },
+  {
+    "id": "avatar-2009",
+    "title": "Avatar (2009)",
+    "description": "Uma jornada épica em Pandora entre humanos e Na'vi.",
+    "thumbnail": "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
+    "src": "https://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
   }
 ]
