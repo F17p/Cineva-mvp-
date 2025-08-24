@@ -7,13 +7,6 @@
     "src": "https://storage.googleapis.com/shaka-demo-assets/angel-one-hls/hls.m3u8"
   },
   {
-    "id": "avengers-endgame-2019",
-    "title": "Avengers: Endgame (2019)",
-    "description": "A batalha final dos Vingadores contra Thanos.",
-    "thumbnail": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
-    "src": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
-  },
-  {
     "id": "stranger-things-2016",
     "title": "Stranger Things (2016 - )",
     "description": "A série que reviveu a nostalgia dos anos 80 com suspense e ficção científica.",
