@@ -1,41 +1,47 @@
-import Link from 'next/link'
-import videos from '../data/videos.json'
+import Link from "next/link"
+import { useState } from "react"
+import videos from "../data/videos.json"
 
 export default function Home() {
-  // Organizar por categoria
-  const categorias = videos.reduce((acc, video) => {
-    if (!acc[video.category]) acc[video.category] = []
-    acc[video.category].push(video)
-    return acc
-  }, {})
+  const [search, setSearch] = useState("")
+
+  // Filtrar vídeos pelo título ou descrição
+  const filteredVideos = videos.filter(v =>
+    v.title.toLowerCase().includes(search.toLowerCase()) ||
+    v.description.toLowerCase().includes(search.toLowerCase())
+  )
 
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">🎬 Cineva</h1>
+    <main>
+      <h1 className="text-3xl font-bold mb-6">🎬 Catálogo Cineva</h1>
 
-      {Object.keys(categorias).map((categoria) => (
-        <section key={categoria} className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">{categoria}</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {categorias[categoria].map((video) => (
-              <Link key={video.id} href={`/video/${video.id}`}>
-                <div className="cursor-pointer group">
-                  <div className="relative rounded-xl overflow-hidden border border-white/10">
-                    <img
-                      src={video.thumbnail}
-                      alt={video.title}
-                      className="w-full h-48 object-cover group-hover:opacity-80 transition"
-                    />
-                  </div>
-                  <p className="mt-2 text-sm font-medium group-hover:text-gray-300">
-                    {video.title}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
+      {/* Campo de Busca */}
+      <input
+        type="text"
+        placeholder="Pesquisar filmes ou séries..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="w-full p-3 mb-6 rounded-lg bg-gray-800 text-white outline-none"
+      />
+
+      {/* Lista de Vídeos */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {filteredVideos.map(video => (
+          <Link key={video.id} href={`/video/${video.id}`} className="block">
+            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-md hover:scale-105 transition">
+              <img src={video.thumbnail} alt={video.title} className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h2 className="text-lg font-semibold">{video.title}</h2>
+                <p className="text-gray-400 text-sm">{video.description}</p>
+              </div>
+            </div>
+          </Link>
+        ))}
+
+        {filteredVideos.length === 0 && (
+          <p className="text-gray-400">Nenhum resultado encontrado.</p>
+        )}
+      </div>
     </main>
   )
 }
