@@ -1,47 +1,63 @@
-import Link from "next/link"
-import { useState } from "react"
-import videos from "../data/videos.json"
+import Link from 'next/link'
+import { useState } from 'react'
+import videos from '../data/videos.json'
+import ImageWithFallback from '../components/ImageWithFallback'
 
 export default function Home() {
   const [search, setSearch] = useState("")
 
-  // Filtrar vídeos pelo título ou descrição
-  const filteredVideos = videos.filter(v =>
-    v.title.toLowerCase().includes(search.toLowerCase()) ||
-    v.description.toLowerCase().includes(search.toLowerCase())
-  )
+  // agrupar por categoria
+  const grouped = videos.reduce((acc, v) => {
+    if (!acc[v.genre]) acc[v.genre] = []
+    acc[v.genre].push(v)
+    return acc
+  }, {})
+
+  // filtro simples por título/descrição
+  const filterFn = (arr) =>
+    arr.filter(v =>
+      v.title.toLowerCase().includes(search.toLowerCase()) ||
+      v.description.toLowerCase().includes(search.toLowerCase())
+    )
 
   return (
-    <main>
-      <h1 className="text-3xl font-bold mb-6">🎬 Catálogo Cineva</h1>
+    <main className="min-h-screen">
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-3xl font-bold">🎬 Cineva</h1>
+        <Link href="/genres" className="text-blue-400 hover:underline">Explorar categorias</Link>
+      </div>
 
-      {/* Campo de Busca */}
       <input
         type="text"
         placeholder="Pesquisar filmes ou séries..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="w-full p-3 mb-6 rounded-lg bg-gray-800 text-white outline-none"
+        className="w-full p-3 mb-8 rounded-lg bg-gray-800 text-white outline-none"
       />
 
-      {/* Lista de Vídeos */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredVideos.map(video => (
-          <Link key={video.id} href={`/video/${video.id}`} className="block">
-            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-md hover:scale-105 transition">
-              <img src={video.thumbnail} alt={video.title} className="w-full h-48 object-cover" />
-              <div className="p-4">
-                <h2 className="text-lg font-semibold">{video.title}</h2>
-                <p className="text-gray-400 text-sm">{video.description}</p>
-              </div>
+      {Object.keys(grouped).map((cat) => {
+        const items = filterFn(grouped[cat])
+        if (!items.length) return null
+        return (
+          <section key={cat} className="mb-10">
+            <h2 className="text-2xl font-semibold mb-4">{cat}</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+              {items.map((v) => (
+                <Link key={v.id} href={`/video/${v.id}`} className="group">
+                  <div className="rounded-xl overflow-hidden border border-white/10">
+                    <ImageWithFallback
+                      src={v.thumbnail}
+                      alt={v.title}
+                      className="w-full h-60 object-cover group-hover:opacity-80 transition"
+                    />
+                  </div>
+                  <p className="mt-2 text-sm">{v.title}</p>
+                </Link>
+              ))}
             </div>
-          </Link>
-        ))}
-
-        {filteredVideos.length === 0 && (
-          <p className="text-gray-400">Nenhum resultado encontrado.</p>
-        )}
-      </div>
+          </section>
+        )
+      })}
     </main>
   )
 }
