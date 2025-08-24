@@ -2,23 +2,16 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Layout({ children }) {
-  const [search, setSearch] = useState("")
+  const [search] = useState("") // (campo visual removido p/ não conflitar com a Home; podemos reativar depois)
 
   return (
     <div className="bg-black min-h-screen text-white flex flex-col">
       {/* NAVBAR */}
       <header className="bg-gray-900 px-6 py-4 flex items-center justify-between shadow-md">
         <Link href="/" className="text-2xl font-bold text-red-500">🎬 Cineva</Link>
-        <input
-          type="text"
-          placeholder="Buscar filmes ou séries..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="px-3 py-2 rounded-lg bg-gray-800 text-white focus:outline-none w-64"
-        />
-        <nav className="space-x-6 hidden sm:block">
+        <nav className="space-x-6">
           <Link href="/" className="hover:text-red-400">Início</Link>
-          <Link href="/categorias" className="hover:text-red-400">Categorias</Link>
+          <Link href="/genres" className="hover:text-red-400">Categorias</Link>
           <Link href="/sobre" className="hover:text-red-400">Sobre</Link>
         </nav>
       </header>
